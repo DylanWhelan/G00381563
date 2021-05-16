@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>country-information</ion-title>
+    <ion-back-button></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngIf="ready">
+    <ion-title>Country: {{covidData.country}}</ion-title>
+    
+    <ion-item>
+      <ion-label>Confirmed Cases of Covid: {{covidData.confirmed}}</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Deaths due to Covid: {{covidData.deaths}}</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Recoveries from Covid: {{covidData.recovered}}</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Total Population: {{covidData.population}}</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Last time Information was updated: {{covidData.updated}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

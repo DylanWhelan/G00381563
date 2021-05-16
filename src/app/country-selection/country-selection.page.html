@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>country-selection</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-title>My Country selected is {{countrySelected}}</ion-title>
+  <ion-list *ngFor="let country of countries">
+    <ion-radio-group [(ngModel)]="countrySelected">
+      <ion-item>
+        <ion-label>{{country}}</ion-label>
+        <ion-radio value={{country}}></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+  <ion-button (click)="updateSelectedCountry()">Please click once you have selected your country</ion-button>
+</ion-content>

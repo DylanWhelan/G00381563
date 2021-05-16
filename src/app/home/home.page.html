@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Covid Information
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-list>
+    <ion-item>
+      <ion-button (click)="openCountrySelectionPage()">Select which country you wish to check</ion-button>
+    </ion-item>
+
+    <ion-item>
+      <ion-button (click)="openCountryInfoPage()">Display covid statistics regarding {{countrySelected}}</ion-button>
+    </ion-item>
+
+    <ion-item>
+      <ion-button (click)="openProjectCreditsPage()">Open Project Credits Page</ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>
